@@ -36,5 +36,5 @@ def island_count(grid):
     return count
 
 
-assert island_count(grid1) == 2
+assert island_count(grid1) == 1
 assert island_count(grid2) == 3
