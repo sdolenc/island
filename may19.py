@@ -30,8 +30,8 @@ def island_count(grid):
             if cell == "1":
                 # either need to increment count
                 # determine if the 1 is part of an existing island
-                if i > 0 and grid[i - 1][j] == "0":
-                    if j > 0 and grid[i][j - 1] == "0":
+                if i == 0 or (i > 0 and grid[i - 1][j] == "0"):
+                    if j == 0 or (j > 0 and grid[i][j - 1] == "0"):
                         count += 1
     return count
 
